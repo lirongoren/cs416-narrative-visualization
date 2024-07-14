@@ -1,1 +1,33 @@
-<h1> Liron </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-annotation@2.5.0"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Impact of Climate Change on Global Temperatures</h1>
+        <div id="scene"></div>
+        <div class="navigation">
+            <button id="prev-button">Previous</button>
+            <button id="next-button">Next</button>
+        </div>
+        <div class="explore">
+            <label for="year-selector">Select Year:</label>
+            <input type="range" id="year-selector" min="1900" max="2020" step="1">
+            <label for="region-selector">Select Region:</label>
+            <select id="region-selector">
+                <option value="global">Global</option>
+                <option value="north-america">North America</option>
+                <option value="europe">Europe</option>
+                <!-- Add more regions as needed -->
+            </select>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
