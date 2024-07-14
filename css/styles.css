@@ -1,0 +1,31 @@
+/* css/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#visualization-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.scene {
+    margin-bottom: 40px;
+}
+
+.annotation {
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 300px;
+    position: absolute;
+    pointer-events: none;
+}
