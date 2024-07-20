@@ -29,7 +29,7 @@ function showGlobalTemperature() {
     sceneDiv.classList.add('scene');
 
     const title = document.createElement('h1');
-    title.textContent = 'Global Temperature Trends (1900-2020)';
+    title.textContent = 'Global Temperature Trends';
     sceneDiv.appendChild(title);
 
     const explanation = document.createElement('p');
@@ -131,7 +131,7 @@ function showCO2Emissions() {
     sceneDiv.classList.add('scene');
 
     const title = document.createElement('h1');
-    title.textContent = 'CO2 Emissions Trends (1900-2020)';
+    title.textContent = 'CO2 Emissions Trends';
     sceneDiv.appendChild(title);
 
     const explanation = document.createElement('p');
