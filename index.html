@@ -9,21 +9,21 @@
 </head>
 
 <body>
-    <div id="visualization-container">
-        <!-- Visualization content will be dynamically updated here -->
-    </div>
+    <h1 id="main-title">Climate Change Visualization</h1>
+    <div id="visualization-container"></div>
+    <div id="tooltip" class="tooltip" style="display: none;"></div>
 
     <div class="controls">
         <button id="previous-button">Previous</button>
         <button id="next-button">Next</button>
-        <label for="year-selector">Select Year:</label>
-        <select id="year-selector">
-            <!-- Options will be populated dynamically -->
+        <button id="reset-button">Reset Year Range</button>
+        <div id="year-range-display">Year Range: 1900 - 2020</div>
         </select>
     </div>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/topojson-client@3"></script>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.js"></script>
     <script src="js/main.js"></script>
 </body>
 

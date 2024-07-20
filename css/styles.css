@@ -1,31 +1,56 @@
-/* css/styles.css */
+/* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#main-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
 }
 
 #visualization-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+svg {
+    display: block;
     margin: 0 auto;
 }
 
-h1 {
-    text-align: center;
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.scene {
-    margin-bottom: 40px;
-}
-
-.annotation {
-    font-size: 14px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    max-width: 300px;
+#tooltip {
     position: absolute;
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
     pointer-events: none;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#year-range-display {
+    margin-left: 20px;
+    font-size: 16px;
 }
